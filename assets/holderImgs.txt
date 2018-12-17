@@ -1,0 +1,12 @@
+aquarius = https://firebasestorage.googleapis.com/v0/b/horoscopio-e66d1.appspot.com/o/zodiac%2Faquarius.png?alt=media&token=49032d3c-c30a-4ffc-80a8-4b63b1ce9008
+aries = https://firebasestorage.googleapis.com/v0/b/horoscopio-e66d1.appspot.com/o/zodiac%2Faries.png?alt=media&token=ce444af0-f511-4cc9-b0a0-1a84467e14b5
+cancer = https://firebasestorage.googleapis.com/v0/b/horoscopio-e66d1.appspot.com/o/zodiac%2Fcancer.png?alt=media&token=3262bb0b-2535-4633-b20f-162f47023216
+capricornus = https://firebasestorage.googleapis.com/v0/b/horoscopio-e66d1.appspot.com/o/zodiac%2Fcapricornus.png?alt=media&token=d5ba5708-87e0-420f-907b-289e32cf4810
+gemini = https://firebasestorage.googleapis.com/v0/b/horoscopio-e66d1.appspot.com/o/zodiac%2Fgemini.png?alt=media&token=5c3d9bfc-ed8e-40f3-89ad-f7573c6e01c3
+leo = https://firebasestorage.googleapis.com/v0/b/horoscopio-e66d1.appspot.com/o/zodiac%2Fleo.png?alt=media&token=ee635e5a-87fc-4795-93b3-ce176db603aa
+libra = https://firebasestorage.googleapis.com/v0/b/horoscopio-e66d1.appspot.com/o/zodiac%2Fleo.png?alt=media&token=ee635e5a-87fc-4795-93b3-ce176db603aa
+pisces = https://firebasestorage.googleapis.com/v0/b/horoscopio-e66d1.appspot.com/o/zodiac%2Fpisces.png?alt=media&token=04d02bea-061b-4bb1-9eed-e4e5a8db209c
+sagittarius = https://firebasestorage.googleapis.com/v0/b/horoscopio-e66d1.appspot.com/o/zodiac%2Fsagittarius.png?alt=media&token=094d36ce-f4f5-4ab3-bc33-6fcc9ce9ea71
+scorpio = https://firebasestorage.googleapis.com/v0/b/horoscopio-e66d1.appspot.com/o/zodiac%2Fscorpio.png?alt=media&token=4bf606c3-b1e8-4519-8571-6c47aab08643
+taurus = https://firebasestorage.googleapis.com/v0/b/horoscopio-e66d1.appspot.com/o/zodiac%2Ftaurus.png?alt=media&token=c696c95e-5aef-457e-a5de-db8303681a16
+virgo = https://firebasestorage.googleapis.com/v0/b/horoscopio-e66d1.appspot.com/o/zodiac%2Fvirgo.png?alt=media&token=972580e8-4c1c-43f4-b595-7f80caeea8ce

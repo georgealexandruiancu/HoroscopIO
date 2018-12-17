@@ -1,0 +1,67 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- ================ STYLES ================ -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <title>HoroscopIO</title>
+</head>
+<body>
+    <div class="container-fluid splashScreen">
+        <div class="components">
+                <div class="title-app">
+                        Welcome to <b>HoroscopIO</b>
+                </div>
+                
+                    <i class="fas fa-envelope"></i>
+                    <input type="text" class="input-login" id="regEmail"/>
+                    <br>
+                    <i class="fas fa-key"></i>
+                    <input type="password" class="input-login" id="regPass"/>
+
+                    <button class="btn btn-primary btn-login" id="loginBtn">Log In</button>
+                    <a href="register.html"><button class="btn btn-primary btn-login">Register</button></a>                    
+                    <button class="btn btn-primary btn-login" onclick="loginFacebook()">Facebook</button>
+                    
+                
+        </div>
+    </div>
+
+    <!-- ================ SCRIPTS ================ -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/index.js"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/5.0.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.0.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.0.0/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.0.0/firebase-storage.js"></script>
+    
+    <script>
+    window.fbAsyncInit = function() {
+      FB.init({
+        appId      : '175263283321858',
+        cookie     : true,
+        xfbml      : true,
+        version    : 'v2.8'
+      });
+        
+      FB.AppEvents.logPageView();   
+        
+    };
+  
+    (function(d, s, id){
+       var js, fjs = d.getElementsByTagName(s)[0];
+       if (d.getElementById(id)) {return;}
+       js = d.createElement(s); js.id = id;
+       js.src = "https://connect.facebook.net/en_US/sdk.js";
+       fjs.parentNode.insertBefore(js, fjs);
+     }(document, 'script', 'facebook-jssdk'));
+    </script>
+    <script src="app/config.js"></script>
+    <script src="app/handler.js"></script>
+</body>
+</html>
