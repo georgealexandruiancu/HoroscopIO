@@ -17,14 +17,14 @@
                 </div>
                 
                     <i class="fas fa-envelope"></i>
-                    <input type="text" class="input-login" id="regEmail"/>
+                    <input type="email" class="input-login" id="regEmail"/>
                     <br>
                     <i class="fas fa-key"></i>
                     <input type="password" class="input-login" id="regPass"/>
 
                     <button class="btn btn-primary btn-login" id="loginBtn">Log In</button>
                     <a href="register.html"><button class="btn btn-primary btn-login">Register</button></a>                    
-                    <button class="btn btn-primary btn-login" onclick="loginFacebook()">Facebook</button>
+                    <!-- <button class="btn btn-primary btn-login" onclick="loginFacebook()">Facebook</button> -->
                     
                 
         </div>
@@ -35,11 +35,11 @@
     <script src="js/bootstrap.min.js"></script>
     <script src="js/index.js"></script>
 
-    <script src="https://www.gstatic.com/firebasejs/5.0.0/firebase-app.js"></script>
+    <!-- <script src="https://www.gstatic.com/firebasejs/5.0.0/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/5.0.0/firebase-auth.js"></script>
     <script src="https://www.gstatic.com/firebasejs/5.0.0/firebase-database.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/5.0.0/firebase-storage.js"></script>
-    
+    <script src="https://www.gstatic.com/firebasejs/5.0.0/firebase-storage.js"></script> -->
+    <script src="https://www.gstatic.com/firebasejs/5.7.0/firebase.js"></script>
     <script>
     window.fbAsyncInit = function() {
       FB.init({
@@ -63,5 +63,22 @@
     </script>
     <script src="app/config.js"></script>
     <script src="app/handler.js"></script>
+    <script>
+    function initApp() {
+            document.getElementById('loginBtn').addEventListener('click', logInWithCreds);
+    }
+
+    window.onload = function () {
+        initApp();
+         firebase.auth().onAuthStateChanged(user => {
+            if (user) {
+                window.location = 'mainPage.html';
+            } else {
+                // window.location = 'index.html';
+                logout();
+            }
+        });
+    }
+    </script>
 </body>
 </html>

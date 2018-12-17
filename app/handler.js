@@ -114,12 +114,12 @@ function register() {
 
 function logout() {
     firebase.auth().signOut();
-    alert("gata");
+    alert("You are logged out! Please sign in");
 }
-document.getElementById('loginBtn').addEventListener('click', function(){
+function logInWithCreds(){
     var userEmail = document.getElementById("regEmail").value;
     var userPass = document.getElementById("regPass").value;
- 
+
     firebase.auth().signInWithEmailAndPassword(userEmail, userPass).then(window.location = 'mainPage.html').catch(function (error) {
         var errorCode = error.code;
         var errorMessage = error.message;
@@ -127,15 +127,27 @@ document.getElementById('loginBtn').addEventListener('click', function(){
         console.log(errorCode);
         alert(errorMessage);
     });
+}
+// document.getElementById('loginBtn').addEventListener('click', function(){
+//     var userEmail = document.getElementById("regEmail").value;
+//     var userPass = document.getElementById("regPass").value;
+ 
+//     firebase.auth().signInWithEmailAndPassword(userEmail, userPass).then(window.location = 'mainPage.html').catch(function (error) {
+//         var errorCode = error.code;
+//         var errorMessage = error.message;
 
-    // firebase.auth().onAuthStateChanged(user => {
-    //     if (user) {
-    //         window.location = 'mainPage.html';
-    //     }else{
-    //         window.location = 'mainPage.html';
-    //     }
-    // });
-});
+//         console.log(errorCode);
+//         alert(errorMessage);
+//     });
+
+//     // firebase.auth().onAuthStateChanged(user => {
+//     //     if (user) {
+//     //         window.location = 'mainPage.html';
+//     //     }else{
+//     //         window.location = 'mainPage.html';
+//     //     }
+//     // });
+// });
 var fbDateBirth;
 function loginFacebook(){
     var provider = new firebase.auth.FacebookAuthProvider();
