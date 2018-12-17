@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="ro.horoscopio.alexiancu" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>HoroscopIO</name>
+    <description>
+        App for your horoscope
+    </description>
+    <author email="iancugeorgealexandru@gmail.com" href="http://www.alexiancu.com">
+        Iancu George-Alexandru
+    </author>
+    <content src="index.html" />
+    <access origin="*" />
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+    <allow-intent href="tel:*" />
+    <allow-intent href="sms:*" />
+    <allow-intent href="mailto:*" />
+    <allow-intent href="geo:*" />
+    <preference name="android-targetSdkVersion" value="23" />
+    <platform name="android">
+        <allow-intent href="market:*" />
+        <icon density="mdpi" src="res/icon/android/mdpi.png" />
+        <icon density="hdpi" src="res/icon/android/hdpi.png" />
+        <icon density="xhdpi" src="res/icon/android/xhdpi.png" />
+        <icon density="xxhdpi" src="res/icon/android/xxhdpi.png" />
+        <icon density="xxxhdpi" src="res/icon/android/xxxhdpi.png" />
+        <splash qualifier="land-ldpi" src="res/screen/android/drawable-land-ldpi-screen.png" />
+        <splash qualifier="land-mdpi" src="res/screen/android/drawable-land-mdpi-screen.png" />
+        <splash qualifier="land-hdpi" src="res/screen/android/drawable-land-hdpi-screen.png" />
+        <splash qualifier="land-xhdpi" src="res/screen/android/drawable-land-xhdpi-screen.png" />
+        <splash qualifier="land-xxhdpi" src="res/screen/android/drawable-land-xxhdpi-screen.png" />
+        <splash qualifier="land-xxxhdpi" src="res/screen/android/drawable-land-xxxhdpi-screen.png" />
+        <splash qualifier="port-ldpi" src="res/screen/android/drawable-port-ldpi-screen.png" />
+        <splash qualifier="port-mdpi" src="res/screen/android/drawable-port-mdpi-screen.png" />
+        <splash qualifier="port-hdpi" src="res/screen/android/drawable-port-hdpi-screen.png" />
+        <splash qualifier="port-xhdpi" src="res/screen/android/drawable-port-xhdpi-screen.png" />
+        <splash qualifier="port-xxhdpi" src="res/screen/android/drawable-port-xxhdpi-screen.png" />
+        <splash qualifier="port-xxxhdpi" src="res/screen/android/drawable-port-xxxhdpi-screen.png" />
+    </platform>
+    <platform name="ios">
+        <allow-intent href="itms:*" />
+        <allow-intent href="itms-apps:*" />
+    </platform>
+    <engine name="android" spec="7.1.4" />
+</widget>

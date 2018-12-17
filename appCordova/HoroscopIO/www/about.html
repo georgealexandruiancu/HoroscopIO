@@ -1,0 +1,105 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- ================ STYLES ================ -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+        crossorigin="anonymous">
+    <title>HoroscopIO</title>
+</head>
+
+<body onload="myFunction()">
+        <div class="load-3" id="loader">
+            
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+    <div id="allPage">
+    <div class="navigation" id="nav">
+        <center>
+            <div class="title">
+                <div class="person">
+                    <div class="photo" id="photoNavBar">
+                        <img src="assets/images/splashScreen.jpg" alt="">
+                    </div>
+                    <div class="name" id="name">
+                      
+                    </div>
+                </div>
+            </div>
+            <div class="items">
+                    <a href="yesterday.html"><li>Yesterday's horoscope</li></a>
+                    <a href="mainPage.html"><li>Today's horoscope</li></a>
+                    <a href="tomorrow.html"><li>Tomorrow's horoscope</li></a>
+                    <a href="profile.html"><li>Profile</li></a>
+                    <a href="about.html"><li>About Signs</li></a>                                                            
+                    <a href="saved.html"><li>Saved</li></a>
+            </div>
+            <div class="buttonNav" id="buttonNav">
+                <i class="fas fa-arrow-left fa-lg fas-custom"></i>
+            </div>
+        </center>
+    </div>
+    <div class="bgDark"></div>
+    <div class="container-fluid no-m-p" data-swipe-threshold="20" data-swipe-timeout="500" data-swipe-ignore="false">
+        <i class="fas fa-ellipsis-h fasMainBtn " id="openNav"></i>
+        <img src="assets/images/mainPage.png" alt="" class="mainPageImage">
+        <div class="title-category">About Signs</div>
+        <div class="row">
+            <div class="col-md-12 select-sign">
+                    Select sign:
+                    <select id="signSelector">
+                            <option value="aries">Aries</option>
+                            <option value="taurus">Taurus</option>
+                            <option value="gemini">Gemini</option>
+                            <option value="cancer">Cancer</option>
+                            <option value="leo">Leo</option>
+                            <option value="virgo">Virgo</option>
+                            <option value="libra">Libra</option>
+                            <option value="scorpio">Scorpio</option>
+                            <option value="sagittarius">Sagittarius</option>
+                            <option value="capricorn">Capricorn</option>
+                            <option value="aquarius">Aquarius</option>
+                            <option value="pisces">Pisces</option>
+                    </select>
+            </div>
+        </div>
+        <hr>
+        <div class="row pl-20 pr-20">
+            <div class="col-md-12">
+                <div class="title-sign" id="title-facts-sign">
+
+                </div>
+                <hr>
+                <div class="desc-sign" id="desc-facts-sign">
+
+                </div>
+                <hr>
+                
+                <div class="title-sign" id="title-pers-sign">
+
+                </div>
+                <hr>
+                <div class="desc-sign" id="desc-pers-sign">
+    
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <!-- ================ SCRIPTS ================ -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/pure-swipe.min.js"></script>
+    <script src="js/index.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.0.4/firebase.js"></script>
+    <script src="app/config.js"></script>
+    <script src="app/about.js"></script>
+</body>
+
+</html>
